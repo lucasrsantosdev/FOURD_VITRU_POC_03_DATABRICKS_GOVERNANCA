@@ -1,0 +1,13 @@
+[project]
+name = "fourd-vitru-poc03"
+version = "0.1.0"
+description = "POC local e Databricks para governanca, segregacao de dominios e auditoria de Contas a Receber"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["poc3*"]

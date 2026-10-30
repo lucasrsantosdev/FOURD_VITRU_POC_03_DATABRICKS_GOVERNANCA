@@ -1,0 +1,6 @@
+-- ARQUITETURA DE REFERENCIA: sem endpoint, usuario, segredo ou credencial real.
+-- SQL Server -> Databricks Lakeflow Connect (CDC / CT) e opcao a avaliar com TI.
+-- A configuracao e feita em conexao Unity Catalog / pipeline e exige permissoes e setup.
+-- Nao habilitar CDC, CT, triggers ou contas automaticamente em bases corporativas.
+-- Ver: https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/sql-server-overview
+-- Para ingestao por arquivos: landing UC Volume + Spark Python Task desta POC.

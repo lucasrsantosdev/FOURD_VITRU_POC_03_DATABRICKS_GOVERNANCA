@@ -1,0 +1,4 @@
+aluno_id,marca,nome_ficticio,curso,situacao_academica,atualizado_em
+101,UNICESUMAR,Aluno Ficticio A,Administracao,ATIVO,2026-10-01
+102,UNICESUMAR,Aluno Ficticio B,Pedagogia,CANCELADO,2026-10-08
+103,UNICESUMAR,Aluno Ficticio C,Sistemas de Informacao,ATIVO,2026-10-12

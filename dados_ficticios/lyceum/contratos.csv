@@ -1,0 +1,4 @@
+contrato_id,aluno_id,marca,versao,status_aceite,data_aceite
+CT-LY-01,101,UNICESUMAR,1,ACEITO,2026-09-25
+CT-LY-02,102,UNICESUMAR,1,ACEITO,2026-09-25
+CT-LY-03,103,UNICESUMAR,2,PENDENTE,

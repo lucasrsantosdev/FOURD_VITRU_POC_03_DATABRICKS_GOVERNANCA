@@ -1,0 +1,32 @@
+bundle:
+  name: fourd_vitru_poc03
+
+variables:
+  catalog:
+    description: 'Catalogo isolado, deve comecar com vitru_poc_'
+    default: vitru_poc_dev
+  landing_path:
+    description: 'Pasta em Unity Catalog Volume, com 8 arquivos ficticios nas subpastas'
+    default: /Volumes/vitru_poc_dev/landing/arquivos
+  cluster_id:
+    description: 'Cluster ID autorizado pelo administrador da Vitru (nao informado na POC)'
+
+resources:
+  jobs:
+    poc03_auditoria_financeira:
+      name: 'FOURD / VITRU | POC 03 | Dados Ficticios'
+      tasks:
+        - task_key: executar_poc03
+          existing_cluster_id: ${var.cluster_id}
+          spark_python_task:
+            python_file: ./databricks/execute_databricks.py
+            parameters:
+              - '--catalog'
+              - '${var.catalog}'
+              - '--landing-path'
+              - '${var.landing_path}'
+
+targets:
+  dev:
+    default: true
+    mode: development

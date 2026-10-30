@@ -1,0 +1,129 @@
+[
+  {
+    "nome": "lyceum_alunos",
+    "arquivo": "lyceum/alunos.csv",
+    "sistema": "LYCEUM",
+    "entidade": "alunos",
+    "chave": "aluno_id",
+    "colunas": [
+      "aluno_id",
+      "marca",
+      "nome_ficticio",
+      "curso",
+      "situacao_academica",
+      "atualizado_em"
+    ],
+    "registros_esperados": 3
+  },
+  {
+    "nome": "gioconda_alunos",
+    "arquivo": "gioconda/alunos.csv",
+    "sistema": "GIOCONDA",
+    "entidade": "alunos",
+    "chave": "matricula",
+    "colunas": [
+      "matricula",
+      "marca",
+      "nome_ficticio",
+      "curso",
+      "situacao",
+      "atualizado_em"
+    ],
+    "registros_esperados": 3
+  },
+  {
+    "nome": "lyceum_contratos",
+    "arquivo": "lyceum/contratos.csv",
+    "sistema": "LYCEUM",
+    "entidade": "contratos",
+    "chave": "contrato_id",
+    "colunas": [
+      "contrato_id",
+      "aluno_id",
+      "marca",
+      "versao",
+      "status_aceite",
+      "data_aceite"
+    ],
+    "registros_esperados": 3
+  },
+  {
+    "nome": "gioconda_contratos",
+    "arquivo": "gioconda/contratos.csv",
+    "sistema": "GIOCONDA",
+    "entidade": "contratos",
+    "chave": "contrato",
+    "colunas": [
+      "contrato",
+      "matricula",
+      "marca",
+      "versao",
+      "situacao_aceite",
+      "aceito_em"
+    ],
+    "registros_esperados": 3
+  },
+  {
+    "nome": "lyceum_recebiveis",
+    "arquivo": "lyceum/recebiveis.csv",
+    "sistema": "LYCEUM",
+    "entidade": "recebiveis",
+    "chave": "id_titulo",
+    "colunas": [
+      "id_titulo",
+      "aluno_id",
+      "marca",
+      "mes_referencia",
+      "valor_cobrado",
+      "status"
+    ],
+    "registros_esperados": 4
+  },
+  {
+    "nome": "gioconda_recebiveis",
+    "arquivo": "gioconda/recebiveis.csv",
+    "sistema": "GIOCONDA",
+    "entidade": "recebiveis",
+    "chave": "titulo",
+    "colunas": [
+      "titulo",
+      "matricula",
+      "marca",
+      "competencia",
+      "valor",
+      "situacao_financeira"
+    ],
+    "registros_esperados": 3
+  },
+  {
+    "nome": "protheus_titulos",
+    "arquivo": "protheus/titulos.csv",
+    "sistema": "PROTHEUS",
+    "entidade": "titulos",
+    "chave": "id_erp",
+    "colunas": [
+      "id_erp",
+      "aluno_erp",
+      "marca",
+      "referencia_origem",
+      "competencia",
+      "valor_erp",
+      "status_contabil"
+    ],
+    "registros_esperados": 8
+  },
+  {
+    "nome": "governanca_crosswalk_alunos",
+    "arquivo": "governanca/crosswalk_alunos.csv",
+    "sistema": "GOVERNANCA",
+    "entidade": "crosswalk_alunos",
+    "chave": "marca",
+    "colunas": [
+      "marca",
+      "sistema",
+      "id_local",
+      "id_canonico"
+    ],
+    "registros_esperados": 12
+  }
+]

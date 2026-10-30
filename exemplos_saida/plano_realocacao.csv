@@ -1,0 +1,9 @@
+dado,origem_atual,dominio_correto,acao_proposta,dono_validacao,situacao
+Situacao de matricula,LYCEUM/GIOCONDA,ACADEMICO,Permanecer no sistema academico; publicar copia governada no Databricks,Secretaria academica,VALIDAR
+Mudancas do aluno,LYCEUM/GIOCONDA,ACADEMICO,Formalizar evento e trilha; acionar POC 01 quando cabivel,Operacoes academicas,VALIDAR
+Contrato e aditivos,LYCEUM/GIOCONDA,CONTRATOS,Manter evidencia/aceite no sistema autorizado; expor versao no Databricks,Juridico + academico,VALIDAR
+Titulos operacionais do aluno,LYCEUM/GIOCONDA,FINANCEIRO,Manter operacao na origem; padronizar chaves e conciliar,Contas a Receber,VALIDAR
+Titulos contabilizados,PROTHEUS,CONTABIL,Manter escrituração no ERP; conciliar contra operacao e investigar lacunas,Contabilidade,VALIDAR
+FIES/bolsas/programas,SIFES/FNDE + LYCEUM,PROGRAMAS,Integrar somente arquivos/APIs autorizados da POC 02; nao reproduzir contrato FIES,Financiamento estudantil,PENDENTE
+Identidade entre sistemas,MULTIPLAS FONTES,GOVERNANCA,"Crosswalk auditavel, sem juntar alunos por nome/CPF",Governanca de dados,VALIDAR
+Consulta gerencial conciliada,RELATORIOS PULVERIZADOS,GOLD_AUDITORIA,Produto de dados derivado; sem reescrita nas fontes,Controladoria + BI,VALIDAR
