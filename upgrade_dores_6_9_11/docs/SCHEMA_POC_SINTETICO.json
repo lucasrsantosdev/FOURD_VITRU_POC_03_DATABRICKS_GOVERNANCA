@@ -1,0 +1,48 @@
+{
+  "version": "SIMULADO_0.1",
+  "ambiente": "local_sem_conexao",
+  "datasets": {
+    "titulos": {
+      "primary_key": "titulo_id",
+      "required": [
+        "titulo_id",
+        "contrato_id",
+        "marca",
+        "modalidade",
+        "carteira",
+        "sistema_origem",
+        "emitido_em",
+        "vencimento_em",
+        "valor_original",
+        "observado_em"
+      ]
+    },
+    "movimentos": {
+      "primary_key": "movimento_id",
+      "foreign_keys": {
+        "titulo_id": "titulos.titulo_id"
+      },
+      "required": [
+        "movimento_id",
+        "titulo_id",
+        "tipo",
+        "valor",
+        "efetivo_em",
+        "observado_em"
+      ]
+    },
+    "creditos": {
+      "primary_key": "credito_id",
+      "required": [
+        "credito_id",
+        "contrato_id",
+        "produto",
+        "codigo_produto",
+        "valor_financiado",
+        "valor_boletado",
+        "valor_recebido",
+        "observado_em"
+      ]
+    }
+  }
+}
